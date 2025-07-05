@@ -8,11 +8,29 @@ app.use(express.json());
 // Mock JWT secret
 const JWT_SECRET = 'mock_jwt_secret';
 
-// Mock officer data for authentication
+// Mock officer data for authentication (with hashed passwords)
 const mockOfficers = [
-  { id: 'officer_293', name: 'Inspector R. Joshi', role: 'inspector', email: 'joshi@trace.in' },
-  { id: 'officer_294', name: 'Admin A. Sharma', role: 'admin', email: 'sharma@trace.in' },
-  { id: 'officer_295', name: 'Analyst S. Gupta', role: 'analyst', email: 'gupta@trace.in' },
+  {
+    id: 'officer_293',
+    name: 'Inspector R. Joshi',
+    role: 'inspector',
+    email: 'joshi@trace.in',
+    passwordHash: bcrypt.hashSync('securepassword123', 10),
+  },
+  {
+    id: 'officer_294',
+    name: 'Admin A. Sharma',
+    role: 'admin',
+    email: 'sharma@trace.in',
+    passwordHash: bcrypt.hashSync('securepassword123', 10),
+  },
+  {
+    id: 'officer_295',
+    name: 'Analyst S. Gupta',
+    role: 'analyst',
+    email: 'gupta@trace.in',
+    passwordHash: bcrypt.hashSync('securepassword123', 10),
+  },
 ];
 
 // Middleware to simulate JWT authentication
@@ -39,6 +57,22 @@ const role = (roles) => (req, res, next) => {
   next();
 };
 
+// Middleware for input validation
+const validate = (req, res, next) => {
+  const { email, password, name, badgeId, role: roleInput } = req.body;
+  if (req.path === '/auth/login') {
+    if (!email || !password) return res.status(400).json({ message: 'Email and password are required' });
+  } else if (req.path === '/auth/register') {
+    if (!name || !badgeId || !roleInput || !email || !password) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+    if (!['admin', 'inspector', 'analyst'].includes(roleInput)) {
+      return res.status(400).json({ message: 'Invalid role' });
+    }
+    if (password.length < 6) return res.status(400).json({ message: 'Password must be at least 6 characters' });
+  }
+  next();
+};
 // Mock suspect data
 const mockSuspects = [
   {
@@ -114,6 +148,39 @@ const mockReports = [
 ];
 
 // API Endpoints
+
+// Authentication Routes
+app.post('/auth/login', validate, async (req, res) => {
+  const { email, password } = req.body;
+  const officer = mockOfficers.find((o) => o.email === email);
+  if (!officer) return res.status(401).json({ message: 'Invalid credentials' });
+
+  const isMatch = await bcrypt.compare(password, officer.passwordHash);
+  if (!isMatch) return res.status(401).json({ message: 'Invalid credentials' });
+
+  const token = jwt.sign({ id: officer.id }, JWT_SECRET, { expiresIn: '1h' });
+  res.json({ token, officer: { id: officer.id, name: officer.name, role: officer.role, email: officer.email } });
+});
+
+app.post('/auth/register', auth, role(['admin']), validate, async (req, res) => {
+  const { name, badgeId, role: roleInput, email, password } = req.body;
+  if (mockOfficers.find((o) => o.email === email || o.badgeId === badgeId)) {
+    return res.status(400).json({ message: 'Email or badge ID already exists' });
+  }
+
+  const newOfficer = {
+    id: `officer_${Math.floor(Math.random() * 10000)}`,
+    name,
+    badgeId,
+    role: roleInput,
+    email,
+    passwordHash: await bcrypt.hash(password, 10),
+  };
+  mockOfficers.push(newOfficer);
+
+  const token = jwt.sign({ id: newOfficer.id }, JWT_SECRET, { expiresIn: '1h' });
+  res.status(201).json({ token, officer: { id: newOfficer.id, name, role: newOfficer.role, email } });
+});
 
 // GET /suspects
 app.get('/suspects', auth, role(['admin', 'inspector', 'analyst']), (req, res) => {

@@ -1,11 +1,14 @@
 # TRACE Mock Backend
 
-Tracking and Criminal Evidence Platform (TRACE) mock backend for simulating API endpoints without MongoDB. This server provides dummy data for testing suspect management, OSINT profiling, report generation, Telegram bot interactions, and legal assistance functionalities.
+Tracking and Criminal Evidence Platform (TRACE) mock backend for simulating API endpoints without MongoDB. This server provides dummy data for testing suspect management, OSINT profiling, report generation, Telegram bot interactions, legal assistance, and officer authentication functionalities.
 
 ## Table of Contents
 - [Overview](#overview)
 - [Setup Instructions](#setup-instructions)
 - [API Endpoints](#api-endpoints)
+  - [Authentication](#authentication-endpoints)
+    - [POST /auth/login](#post-authlogin)
+    - [POST /auth/register](#post-authregister)
   - [Suspect Management](#suspect-management)
     - [GET /suspects](#get-suspects)
     - [GET /suspects/:id](#get-suspectsid)
@@ -26,7 +29,7 @@ Tracking and Criminal Evidence Platform (TRACE) mock backend for simulating API 
 
 ## Overview
 
-This mock backend simulates the TRACE platform's API for Indian police officers to track drug trafficking activities. It uses Express.js and provides hardcoded responses for testing without requiring a database. All endpoints are protected with JWT-based authentication and role-based access control (`admin`, `inspector`, `analyst`).
+This mock backend simulates the TRACE platform's API for Indian police officers to track drug trafficking activities. It uses Express.js and provides hardcoded responses for testing without requiring a database. All endpoints (except `/auth/login`) are protected with JWT-based authentication and role-based access control (`admin`, `inspector`, `analyst`).
 
 ## Setup Instructions
 
@@ -49,7 +52,7 @@ This mock backend simulates the TRACE platform's API for Indian police officers 
 
 3. **Install Dependencies**:
    ```bash
-   npm install express jsonwebtoken
+   npm install express jsonwebtoken bcrypt
    ```
 
 4. **Add `server.js`**:
@@ -62,7 +65,7 @@ This mock backend simulates the TRACE platform's API for Indian police officers 
    The server runs on `http://localhost:3000`.
 
 ### Authentication Setup
-All endpoints require a JWT token in the `Authorization` header and an `X-TRACE-OFFICER-ID` header. To generate a JWT token:
+All endpoints (except `/auth/login`) require a JWT token in the `Authorization` header and an `X-TRACE-OFFICER-ID` header. To generate a JWT token, first use the login endpoint or create one manually for testing:
 ```javascript
 const jwt = require('jsonwebtoken');
 console.log(jwt.sign({ id: 'officer_293' }, 'mock_jwt_secret'));
@@ -97,12 +100,60 @@ To version control the project:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: TRACE mock backend"
+   git commit -m "Initial commit: TRACE mock backend with authentication"
    git remote add origin https://github.com/your-username/trace-mock-backend.git
    git push -u origin main
    ```
 
 ## API Endpoints
+
+### Authentication Endpoints
+
+#### POST /auth/login
+**Purpose**: Authenticate an officer and return a JWT token.  
+**Roles**: None (public endpoint)  
+**Example Request**:
+```bash
+curl -X POST -H "Content-Type: application/json" \
+     -d '{"email":"joshi@trace.in","password":"securepassword123"}' \
+     http://localhost:3000/auth/login
+```
+**Example Response**:
+```json
+{
+  "token": "<jwt-token>",
+  "officer": {
+    "id": "officer_293",
+    "name": "Inspector R. Joshi",
+    "role": "inspector",
+    "email": "joshi@trace.in"
+  }
+}
+```
+
+#### POST /auth/register
+**Purpose**: Register a new officer (admin only).  
+**Roles**: `admin`  
+**Example Request**:
+```bash
+curl -X POST -H "Authorization: Bearer <your-jwt-token>" \
+     -H "X-TRACE-OFFICER-ID: officer_294" \
+     -H "Content-Type: application/json" \
+     -d '{"name":"S. Gupta","badgeId":"B12345","role":"analyst","email":"gupta@trace.in","password":"securepassword123"}' \
+     http://localhost:3000/auth/register
+```
+**Example Response**:
+```json
+{
+  "token": "<jwt-token>",
+  "officer": {
+    "id": "officer_295",
+    "name": "S. Gupta",
+    "role": "analyst",
+    "email": "gupta@trace.in"
+  }
+}
+```
 
 ### Suspect Management
 
@@ -363,16 +414,15 @@ curl -X POST -H "Authorization: Bearer <your-jwt-token>" \
 
 ## Authentication
 
-All endpoints require:
+All endpoints (except `/auth/login`) require:
 - **Authorization Header**: `Bearer <your-jwt-token>`
 - **X-TRACE-OFFICER-ID Header**: e.g., `officer_293`
-- Generate a token using:
+- Generate a token using the `/auth/login` endpoint or manually:
   ```javascript
-  const jwt = require('jsonwebtoken');
+  const jwt = require('javascript');
   console.log(jwt.sign({ id: 'officer_293' }, 'mock_jwt_secret'));
   ```
 - Supported officer IDs and roles:
-  - `officer_293`: `inspector`
-  - `officer_294`: `admin`
-  - `officer_295`: `analyst`
-
+  - `officer_293`: `inspector` (email: `joshi@trace.in`, password: `securepassword123`)
+  - `officer_294`: `admin` (email: `sharma@trace.in`, password: `securepassword123`)
+  - `officer_295`: `analyst` (email: `gupta@trace.in`, password: `securepassword123`)

@@ -35,6 +35,19 @@ const fir = [
   body('location').notEmpty().withMessage('Location is required'),
 ];
 
+const login = [
+  body('email').isEmail().withMessage('Invalid email'),
+  body('password').notEmpty().withMessage('Password is required'),
+];
+
+const register = [
+  body('name').notEmpty().withMessage('Name is required'),
+  body('badgeId').notEmpty().withMessage('Badge ID is required'),
+  body('role').isIn(['admin', 'inspector', 'analyst']).withMessage('Invalid role'),
+  body('email').isEmail().withMessage('Invalid email'),
+  body('password').isLength({ min: 6 }).withMessage('Password must be at least 6 characters'),
+];
+
 const validate = (validations) => async (req, res, next) => {
   await Promise.all(validations.map((validation) => validation.run(req)));
   const errors = validationResult(req);
@@ -44,4 +57,4 @@ const validate = (validations) => async (req, res, next) => {
   next();
 };
 
-module.exports = { suspect, osint, report, botStart, legalAssist, fir, validate };
+module.exports = { suspect, osint, report, botStart, legalAssist, fir, login, register, validate };

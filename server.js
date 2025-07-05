@@ -14,6 +14,8 @@ app.use('/osint', require('./routes/osint'));
 app.use('/reports', require('./routes/reports'));
 app.use('/bot', require('./routes/bot'));
 app.use('/legal', require('./routes/legal'));
+app.use('/auth', require('./routes/auth')); 
+// app.use('/fir', require('./routes/fir'));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
