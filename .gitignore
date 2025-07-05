@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Logs
+error.log
+combined.log
+
+# Reports and generated files
+reports/
+
+# Editor and OS files
+.DS_Store
+*.swp
+*.swo
+.idea/
+*.code-workspace
+
+# Build artifacts
+dist/
+build/
+
+# Coverage reports
+coverage/
