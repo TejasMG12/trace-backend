@@ -1,5 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 // Initialize Express app
 const app = express();
@@ -15,21 +16,21 @@ const mockOfficers = [
     name: 'Inspector R. Joshi',
     role: 'inspector',
     email: 'joshi@trace.in',
-    passwordHash: bcrypt.hashSync('securepassword123', 10),
+    passwordHash: bcrypt.hashSync('Password@123', 10),
   },
   {
     id: 'officer_294',
     name: 'Admin A. Sharma',
     role: 'admin',
     email: 'sharma@trace.in',
-    passwordHash: bcrypt.hashSync('securepassword123', 10),
+    passwordHash: bcrypt.hashSync('Password@123', 10),
   },
   {
     id: 'officer_295',
     name: 'Analyst S. Gupta',
     role: 'analyst',
     email: 'gupta@trace.in',
-    passwordHash: bcrypt.hashSync('securepassword123', 10),
+    passwordHash: bcrypt.hashSync('Password@123', 10),
   },
 ];
 

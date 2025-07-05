@@ -64,6 +64,11 @@ This mock backend simulates the TRACE platform's API for Indian police officers 
    ```
    The server runs on `http://localhost:3000`.
 
+6. **Start a Dummy Server**:
+  ```bash
+   node dummy_server.js
+   ```
+   The dummy server runs on `http://localhost:3000`.
 ### Authentication Setup
 All endpoints (except `/auth/login`) require a JWT token in the `Authorization` header and an `X-TRACE-OFFICER-ID` header. To generate a JWT token, first use the login endpoint or create one manually for testing:
 ```javascript
