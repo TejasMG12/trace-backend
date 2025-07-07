@@ -1,0 +1,852 @@
+[
+  {
+    "name": "Aarav Sharma",
+    "aliases": ["Aarav", "Sharma Ji"],
+    "username": "aarav_dude",
+    "phone": "9876543210",
+    "dob": "1992-03-15",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkTrade", "NightMarket"],
+    "locationHistory": ["Mumbai", "Delhi"],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need 50g of stuff for the party tonight (Terms: stuff, 50g; Intent: Requesting drug purchase)",
+      "Suspicious message: Got the white powder, meet at usual spot (Terms: white powder; Intent: Coordinating drug delivery)"
+    ],
+    "request_id": "req001"
+  },
+  {
+    "name": "Vikram Patel",
+    "aliases": ["Vicky", "VP"],
+    "username": "vicky_dealer",
+    "phone": null,
+    "dob": "1988-07-22",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowHub", "TradeZone"],
+    "locationHistory": ["Ahmedabad", "Surat"],
+    "riskScore": 90,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Can you supply 100 units by tomorrow? (Terms: units; Intent: Bulk drug order)",
+      "Suspicious message: New batch of candy available, DM for details (Terms: candy; Intent: Advertising drugs)"
+    ],
+    "request_id": "req002"
+  },
+  {
+    "name": "Priya Gupta",
+    "aliases": ["Pri", "Gupta Queen"],
+    "username": "priya_g",
+    "phone": "9123456789",
+    "dob": "1995-11-30",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightTrade", "SecretStash"],
+    "locationHistory": ["Kolkata", "Bengaluru"],
+    "riskScore": 78,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Looking for some green for the weekend (Terms: green; Intent: Seeking marijuana)",
+      "Suspicious message: Cash ready, need 20 pills ASAP (Terms: pills; Intent: Urgent drug purchase)"
+    ],
+    "request_id": "req003"
+  },
+  {
+    "name": "Rahul Verma",
+    "aliases": ["Rahul Bhai"],
+    "username": "r_verma",
+    "phone": null,
+    "dob": "1990-01-10",
+    "platforms": ["Telegram"],
+    "groupMemberships": [],
+    "locationHistory": ["Delhi", "Jaipur"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Got a fresh shipment of snow, who’s in? (Terms: snow; Intent: Offering cocaine)",
+      "Suspicious message: Meet me at the old warehouse for the goods (Terms: goods; Intent: Arranging drug deal)"
+    ],
+    "request_id": "req004"
+  },
+  {
+    "name": "Ananya Singh",
+    "aliases": ["Anu", "Singh Star"],
+    "username": "ananya_s",
+    "phone": "9988776655",
+    "dob": "1993-09-05",
+    "platforms": ["Telegram"],
+    "groupMemberships": [],
+    "locationHistory": [],
+    "riskScore": 80,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need some ice for the rave, you got it? (Terms: ice; Intent: Requesting methamphetamine)",
+      "Suspicious message: Transfer 10k for the package, will deliver tonight (Terms: package; Intent: Coordinating payment and delivery)"
+    ],
+    "request_id": "req005"
+  },
+  {
+    "name": "Kiran Yadav",
+    "aliases": ["Kiran", "KY"],
+    "username": "kiran_y",
+    "phone": null,
+    "dob": "1987-04-18",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["TradeDen", "ShadowMarket"],
+    "locationHistory": ["Lucknow", "Kanpur"],
+    "riskScore": 88,
+    "status": "active",
+    "proof": [
+      "Suspicious message: 30g of spice available, serious buyers only (Terms: spice; Intent: Selling drugs)",
+      "Suspicious message: Drop point is the park at 10 PM (Terms: drop point; Intent: Setting up drug exchange)"
+    ],
+    "request_id": "req006"
+  },
+  {
+    "name": "Neha Joshi",
+    "aliases": ["Neha J"],
+    "username": "neha_joshi",
+    "phone": "9765432109",
+    "dob": "1994-12-12",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkTrade", "NightHub"],
+    "locationHistory": ["Pune", "Mumbai"],
+    "riskScore": 79,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Got some happy pills, want to try? (Terms: happy pills; Intent: Offering ecstasy)",
+      "Suspicious message: Need a quick 5g for personal use (Terms: 5g; Intent: Requesting small drug quantity)"
+    ],
+    "request_id": "req007"
+  },
+  {
+    "name": "Siddharth Nair",
+    "aliases": ["Sid", "Nair Bro"],
+    "username": "sid_nair",
+    "phone": null,
+    "dob": "1991-06-25",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["SecretTrade", "BlackDen"],
+    "locationHistory": ["Kochi", "Thiruvananthapuram"],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Fresh stock of kush, hit me up (Terms: kush; Intent: Advertising marijuana)",
+      "Suspicious message: Can you do 2g by tonight? (Terms: 2g; Intent: Requesting quick drug deal)"
+    ],
+    "request_id": "req008"
+  },
+  {
+    "name": "Meera Iyer",
+    "aliases": ["Meera", "MI"],
+    "username": "meera_i",
+    "phone": "9898765432",
+    "dob": "1989-02-28",
+    "platforms": ["Telegram"],
+    "groupMemberships": [ "DarkHub"],
+    "locationHistory": [],
+    "riskScore": 87,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need a supplier for 10g of dust (Terms: dust; Intent: Seeking drug supplier)",
+      "Suspicious message: Payment sent, drop the stuff at usual (Terms: stuff; Intent: Confirming drug transaction)"
+    ],
+    "request_id": "req009"
+  },
+  {
+    "name": "Rohan Desai",
+    "aliases": ["Rohan", "Desai King"],
+    "username": "rohan_d",
+    "phone": null,
+    "dob": "1996-08-03",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightTrade"],
+    "locationHistory": ["Vadodara"],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Got some fire powder, who wants in? (Terms: powder; Intent: Offering drugs)",
+      "Suspicious message: Meet at the bridge for the pickup (Terms: pickup; Intent: Arranging drug collection)"
+    ],
+    "request_id": "req010"
+  },
+  {
+    "name": "Aditya Rao",
+    "aliases": ["Adi", "Rao Bhai"],
+    "username": "adi_rocket",
+    "phone": "9871234567",
+    "dob": "1991-05-12",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["Moonlight", "StarTrade"],
+    "locationHistory": ["Mumbai", "Goa"],
+    "riskScore": 84,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yo, got some 🌟 for the weekend? (Terms: [🌟, star], Intent: Requesting drugs subtly)",
+      "Suspicious message: Need a quick 🚀 at the beach, you in? (Terms: [🚀, rocket], Intent: Arranging drug pickup)"
+    ],
+    "request_id": "req011"
+  },
+  {
+    "name": "Sanya Malhotra",
+    "aliases": ["Sanya", "SM"],
+    "username": "sanya_m",
+    "phone": null,
+    "dob": "1994-08-19",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightGlow", "ShadowTrade"],
+    "locationHistory": ["Delhi"],
+    "riskScore": 79,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Can you hook me up with some 🍬 tonight? (Terms: [🍬, candy], Intent: Requesting drug purchase)",
+      "Suspicious message: Got 💰 ready for the sweet drop (Terms: [sweet, drop], Intent: Coordinating payment and delivery)"
+    ],
+    "request_id": "req012"
+  },
+  {
+    "name": "Ravi Thakur",
+    "aliases": ["Ravi T"],
+    "username": "ravi_tiger",
+    "phone": "9765432101",
+    "dob": "1989-03-25",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkWave"],
+    "locationHistory": ["Kolkata", "Patna"],
+    "riskScore": 86,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need some ❄️ for the party, bro (Terms: [❄️, snow], Intent: Seeking cocaine)",
+      "Suspicious message: Meet at the 🦁 spot for the goods (Terms: [goods, 🦁], Intent: Setting up drug exchange)"
+    ],
+    "request_id": "req013"
+  },
+  {
+    "name": "Ishita Banerjee",
+    "aliases": ["Ish", "Bani"],
+    "username": "ishita_b",
+    "phone": null,
+    "dob": "1993-11-07",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["StarHub"],
+    "locationHistory": [],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Got any 🌿 for the chill session? (Terms: [🌿, herb], Intent: Requesting marijuana)",
+      "Suspicious message: Slide by with the green pack tonight (Terms: [green, pack], Intent: Arranging drug delivery)"
+    ],
+    "request_id": "req014"
+  },
+  {
+    "name": "Arjun Mehra",
+    "aliases": ["AJ", "Mehra King"],
+    "username": "arjun_m",
+    "phone": "9890123456",
+    "dob": "1990-06-30",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightDen"],
+    "locationHistory": [],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yo, need some 🔥 for the rave (Terms: [🔥, fire], Intent: Seeking party drugs)",
+      "Suspicious message: Drop the spark at the usual 🌃 (Terms: [spark, 🌃], Intent: Coordinating nighttime deal)"
+    ],
+    "request_id": "req015"
+  },
+  {
+    "name": "Nisha Reddy",
+    "aliases": ["Nish", "Reddy Gal"],
+    "username": "nisha_r",
+    "phone": null,
+    "dob": "1995-02-14",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkTrade", "MoonMarket"],
+    "locationHistory": ["Visakhapatnam"],
+    "riskScore": 80,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Can you get me some 🍫 for the trip? (Terms: [🍫, chocolate], Intent: Requesting drugs for travel)",
+      "Suspicious message: Cash ready for the sweet 🍬 deal (Terms: [🍬, sweet], Intent: Confirming drug purchase)"
+    ],
+    "request_id": "req016"
+  },
+  {
+    "name": "Kabir Shah",
+    "aliases": ["Kabir", "K Shah"],
+    "username": "kabir_shah",
+    "phone": "9876541234",
+    "dob": "1988-09-09",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowHub", "NightTrade"],
+    "locationHistory": [],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Got any 💎 for the crew? (Terms: [💎, ice], Intent: Requesting methamphetamine)",
+      "Suspicious message: Meet at the 🦚 for the stash (Terms: [stash, 🦚], Intent: Arranging drug pickup)"
+    ],
+    "request_id": "req017"
+  },
+  {
+    "name": "Diya Kapoor",
+    "aliases": ["Diya K"],
+    "username": "diya_k",
+    "phone": null,
+    "dob": "1992-12-01",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["StarDen", "TradeCircle"],
+    "locationHistory": ["Jaipur", "Udaipur"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need some 🌙 dust for the night (Terms: [🌙, dust], Intent: Seeking drugs for nighttime use)",
+      "Suspicious message: Got the 💸 for the moon drop (Terms: [moon, drop], Intent: Coordinating payment and delivery)"
+    ],
+    "request_id": "req018"
+  },
+  {
+  "name": "Vivan Choudhary",
+    "aliases": ["Vivan", "VC"],
+    "username": "vivan_c",
+    "phone": "9123456780",
+    "dob": "1993-04-22",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkNest", "TradeGlow"],
+    "locationHistory": ["Lucknow"],
+    "riskScore": 87,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yo, any 🍒 for the fest? (Terms: [🍒, cherry], Intent: Requesting party drugs)",
+      "Suspicious message: Slide the pack under the 🌉 tonight (Terms: [pack, 🌉], Intent: Setting up discreet drug exchange)"
+    ],
+    "request_id": "req019"
+  },
+  {
+    "name": "Tara Menon",
+    "aliases": ["Tara", "Menon Star"],
+    "username": "tara_m",
+    "phone": null,
+    "dob": "1996-07-17",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["MoonHub", "ShadowDrop"],
+    "locationHistory": ["Kochi"],
+    "riskScore": 80,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Need some 🍃 for the vibe (Terms: [🍃, leaf], Intent: Seeking marijuana for casual use)",
+      "Suspicious message: Meet at the 🌴 for the green stuff (Terms: [green, stuff], Intent: Arranging drug pickup)"
+    ],
+    "request_id": "req020"
+  },
+  {
+    "name": "Amit Kulkarni",
+    "aliases": ["Amit Bhau", "AK"],
+    "username": "amit_k",
+    "phone": "9876543210",
+    "dob": "1990-04-12",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["RaatBazaar"],
+    "locationHistory": [],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Bhai, koi 🌟 item hai kya aaj? (Terms: [🌟, item], Intent: Requesting drugs in Marathi-English)",
+      "Suspicious message: Usual jagah pe 🚚 drop kar de (Terms: [🚚, drop], Intent: Arranging delivery in Hinglish)"
+    ],
+    "request_id": "req021"
+  },
+  {
+    "name": "Pooja Yadav",
+    "aliases": ["Pooja", "PY"],
+    "username": "pooja_y",
+    "phone": null,
+    "dob": "1993-08-25",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["AndheraTrade", "ChhupaRustam"],
+    "locationHistory": ["Delhi", "Noida"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kuch 🍬 milega kya party ke liye? (Terms: [🍬, kuch], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: Cash taiyar, jaldi se 🌙 stuff bhej (Terms: [🌙, stuff], Intent: Coordinating payment in Hindi)"
+    ],
+    "request_id": "req022"
+  },
+  {
+    "name": "Ramesh Gowda",
+    "aliases": ["Ramesh Anna"],
+    "username": "ramesh_g",
+    "phone": "9765432109",
+    "dob": "1988-11-15",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkSampige", "NightHalli"],
+    "locationHistory": ["Bengaluru", "Mysuru"],
+    "riskScore": 87,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yenu 🌿 ideya, weekend ge? (Terms: [🌿, yenu], Intent: Asking for drugs in Kannada-English)",
+      "Suspicious message: Cash ready, drop the 🔥 at usual spot (Terms: [🔥, drop], Intent: Arranging deal in Kannada-English)"
+    ],
+    "request_id": "req023"
+  },
+  {
+    "name": "Sumanth Reddy",
+    "aliases": ["Sumanth", "SR"],
+    "username": "sumanth_r",
+    "phone": null,
+    "dob": "1992-06-30",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChayaTrade", "NightRangu"],
+    "locationHistory": ["Hyderabad", "Warangal"],
+    "riskScore": 80,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina 🍒 stuff unda, bro? (Terms: [🍒, stuff], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: 💸 ready, night ki 🌃 drop chey (Terms: [🌃, drop], Intent: Coordinating delivery in Telugu-English)"
+    ],
+    "request_id": "req024"
+  },
+  {
+    "name": "Sneha Patil",
+    "aliases": ["Sneha Tai"],
+    "username": "sneha_p",
+    "phone": "9898765432",
+    "dob": "1994-02-18",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["GuptBazaar", "RaatAdda"],
+    "locationHistory": ["Nagpur", "Aurangabad"],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi 🍬 saman milnar ka? (Terms: [🍬, saman], Intent: Seeking drugs in Marathi-English)",
+      "Suspicious message: Drop karayla 🌉 jaga thik aahe (Terms: [🌉, drop], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req025"
+  },
+  {
+    "name": "Vikas Sharma",
+    "aliases": ["Vikas Bhai", "VS"],
+    "username": "vikas_s",
+    "phone": null,
+    "dob": "1989-09-05",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowGali", "DarkMandi"],
+    "locationHistory": ["Lucknow", "Kanpur"],
+    "riskScore": 86,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi ❄️ maal hai kya, bhai? (Terms: [❄️, maal], Intent: Asking for drugs in Hinglish)",
+      "Suspicious message: Raat ko 🌙 usual spot pe mil (Terms: [🌙, spot], Intent: Setting up meet in Hinglish)"
+    ],
+    "request_id": "req026"
+  },
+  {
+    "name": "Lakshmi Nair",
+    "aliases": ["Lakshmi", "LN"],
+    "username": "lakshmi_n",
+    "phone": "9123456789",
+    "dob": "1995-12-22",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightSailu", "DarkRangu"],
+    "locationHistory": ["Kochi"],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Edaina 🔥 item unte cheppu (Terms: [🔥, item], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: Cash ready, 🌴 spot lo drop chey (Terms: [🌴, drop], Intent: Arranging drop in Telugu-English)"
+    ],
+    "request_id": "req027"
+  },
+  {
+    "name": "Pranav Desai",
+    "aliases": ["Pranav Bhai"],
+    "username": "pranav_d",
+    "phone": null,
+    "dob": "1991-07-10",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChhupaTrade", "RaatMarket"],
+    "locationHistory": ["Ahmedabad"],
+    "riskScore": 84,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Bhai, koi 🌟 cheez hai kya? (Terms: [🌟, cheez], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: 💰 taiyar, raat ko 🦚 drop kar (Terms: [🦚, drop], Intent: Coordinating deal in Hinglish)"
+    ],
+    "request_id": "req028"
+  },
+  {
+    "name": "Anjali Shetty",
+    "aliases": ["Anjali Tai"],
+    "username": "anjali_s",
+    "phone": "9871234560",
+    "dob": "1993-03-28",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NakaTrade"],
+    "locationHistory": ["Mumbai", "Thane"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi 🍃 saman ahe ka party sathi? (Terms: [🍃, saman], Intent: Requesting drugs in Marathi-English)",
+      "Suspicious message: Drop sathi 🌃 thik aahe (Terms: [🌃, drop], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req029"
+  },
+  {
+    "name": "Karthik Gowda",
+    "aliases": ["Karthik Anna"],
+    "username": "karthik_g",
+    "phone": null,
+    "dob": "1990-10-15",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkHalli", "NightSampige"],
+    "locationHistory": ["Bengaluru", "Hubli"],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yenu 🍬 stuff ideya, rave ge? (Terms: [🍬, stuff], Intent: Seeking drugs in Kannada-English)",
+      "Suspicious message: Cash ready, 🌉 drop madu (Terms: [🌉, drop], Intent: Coordinating delivery in Kannada-English)"
+    ],
+    "request_id": "req030"
+  },
+  {
+    "name": "Divya Rao",
+    "aliases": ["Divya", "DR"],
+    "username": "divya_r",
+    "phone": "9761234567",
+    "dob": "1994-01-09",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChayaBazaar", "NightRangu"],
+    "locationHistory": ["Visakhapatnam", "Guntur"],
+    "riskScore": 80,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina ❄️ unda, night ki? (Terms: [❄️, emaina], Intent: Asking for drugs in Telugu)",
+      "Suspicious message: 💸 ready, usual 🌴 lo drop chey (Terms: [🌴, drop], Intent: Arranging deal in Telugu-English)"
+    ],
+    "request_id": "req031"
+  },
+  {
+    "name": "Rohan Gupta",
+    "aliases": ["Rohan Bhai"],
+    "username": "rohan_g",
+    "phone": null,
+    "dob": "1987-05-20",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowMandi", "DarkGali"],
+    "locationHistory": ["Delhi", "Gurgaon"],
+    "riskScore": 86,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi 🍒 maal milega kya? (Terms: [🍒, maal], Intent: Requesting drugs in Hinglish)",
+      "Suspicious message: Raat ko 🌙 spot pe drop kar (Terms: [🌙, drop], Intent: Setting up drop in Hinglish)"
+    ],
+    "request_id": "req032"
+  },
+  {
+    "name": "Meenal Joshi",
+    "aliases": ["Meenal Tai"],
+    "username": "meenal_j",
+    "phone": "9891234567",
+    "dob": "1992-12-03",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NakaBazaar", "RaatAdda"],
+    "locationHistory": ["Nashik", "Pune"],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi 🔥 cheez ahe ka weekend sathi? (Terms: [🔥, cheez], Intent: Seeking drugs in Marathi-English)",
+      "Suspicious message: Drop sathi 🦚 jagah thik aahe (Terms: [🦚, drop], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req033"
+  },
+  {
+    "name": "Sai Krishna",
+    "aliases": ["Sai", "SK"],
+    "username": "sai_k",
+    "phone": null,
+    "dob": "1991-08-14",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkRangu", "NightSailu"],
+    "locationHistory": ["Hyderabad", "Nizamabad"],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina 🌟 stuff unda party ki? (Terms: [🌟, stuff], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: Cash ready, 🌃 lo drop chey (Terms: [🌃, drop], Intent: Coordinating deal in Telugu-English)"
+    ],
+    "request_id": "req034"
+  },
+  {
+    "name": "Tanya Shekhawat",
+    "aliases": ["Tanya", "TS"],
+    "username": "tanya_s",
+    "phone": "9876541230",
+    "dob": "1995-04-27",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowTrade", "DarkHub"],
+    "locationHistory": ["Jaipur", "Jodhpur"],
+    "riskScore": 84,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi 🍃 maal hai kya chill ke liye? (Terms: [🍃, maal], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: 💰 taiyar, usual 🌉 pe drop kar (Terms: [🌉, drop], Intent: Arranging delivery in Hinglish)"
+    ],
+    "request_id": "req035"
+  },
+  {
+    "name": "Nikhil Pawar",
+    "aliases": ["Nikhil Bhau", "NP"],
+    "username": "nikhil_p",
+    "phone": "9876543211",
+    "dob": "1991-03-10",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["GuptNaka", "RaatBazaar"],
+    "locationHistory": ["Mumbai", "Thane"],
+    "riskScore": 86,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Bhai, koi s-t-@r item hai kya? (Terms: [s-t-@r, item], Intent: Requesting drugs in Marathi-English)",
+      "Suspicious message: Usual jagah pe d-r-0-p kar de 🌟 (Terms: [d-r-0-p, 🌟], Intent: Arranging delivery in Marathi-English)"
+    ],
+    "request_id": "req036"
+  },
+  {
+    "name": "Riya Sharma",
+    "aliases": ["Riya", "RS"],
+    "username": "riya_s",
+    "phone": null,
+    "dob": "1994-07-22",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["AndheraHub", "ChhupaTrade"],
+    "locationHistory": ["Delhi", "Gurgaon"],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kuch c-@-n-d-y milega kya party ke liye? (Terms: [c-@-n-d-y], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: 💰 taiyar, jaldi se m-0-0-n stuff bhej (Terms: [m-0-0-n, stuff], Intent: Coordinating payment in Hindi)"
+    ],
+    "request_id": "req037"
+  },
+  {
+    "name": "Vinay Kumar",
+    "aliases": ["Vinay Anna"],
+    "username": "vinay_k",
+    "phone": "9765432110",
+    "dob": "1989-05-15",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkSampige", "NightHalli"],
+    "locationHistory": ["Bengaluru", "Mangalore"],
+    "riskScore": 88,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yenu h-3-r-b ideya weekend ge? (Terms: [h-3-r-b], Intent: Asking for drugs in Kannada-English)",
+      "Suspicious message: Cash ready, drop the f-1-r-3 at usual 🌉 (Terms: [f-1-r-3, 🌉], Intent: Arranging deal in Kannada-English)"
+    ],
+    "request_id": "req038"
+  },
+  {
+    "name": "Sravani Reddy",
+    "aliases": ["Sravani", "SR"],
+    "username": "sravani_r",
+    "phone": null,
+    "dob": "1993-09-30",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChayaTrade", "NightRangu"],
+    "locationHistory": ["Hyderabad", "Vijayawada"],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina ch-3-r-r-y stuff unda? (Terms: [ch-3-r-r-y, stuff], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: 💸 ready, night ki d-r-0-p chey 🌴 (Terms: [d-r-0-p, 🌴], Intent: Coordinating delivery in Telugu-English)"
+    ],
+    "request_id": "req039"
+  },
+  {
+    "name": "Kavita More",
+    "aliases": ["Kavita Tai"],
+    "username": "kavita_m",
+    "phone": "9898765433",
+    "dob": "1992-02-18",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NakaTrade", "GuptAdda"],
+    "locationHistory": ["Nagpur", "Pune"],
+    "riskScore": 84,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi s-n-0-w saman milnar ka? (Terms: [s-n-0-w, saman], Intent: Seeking drugs in Marathi-English)",
+      "Suspicious message: Drop karayla j-@g-@h thik aahe 🌃 (Terms: [j-@g-@h, 🌃], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req040"
+  },
+  {
+    "name": "Arun Singh",
+    "aliases": ["Arun Bhai", "AS"],
+    "username": "arun_s",
+    "phone": null,
+    "dob": "1990-11-05",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowGali", "DarkMandi"],
+    "locationHistory": ["Lucknow", "Varanasi"],
+    "riskScore": 87,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi m-@-@l hai kya, bhai? (Terms: [m-@-@l], Intent: Asking for drugs in Hinglish)",
+      "Suspicious message: Raat ko s-p-0-t pe drop kar 🌙 (Terms: [s-p-0-t, 🌙], Intent: Setting up meet in Hinglish)"
+    ],
+    "request_id": "req041"
+  },
+  {
+    "name": "Deepika Nair",
+    "aliases": ["Deepika", "DN"],
+    "username": "deepika_n",
+    "phone": "9123456790",
+    "dob": "1995-01-12",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NightSailu", "DarkRangu"],
+    "locationHistory": ["Kochi", "Kozhikode"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Edaina 1-c-3 item unte cheppu (Terms: [1-c-3, item], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: Cash ready, d-r-0-p at usual 🌴 spot (Terms: [d-r-0-p, 🌴], Intent: Arranging drop in Telugu-English)"
+    ],
+    "request_id": "req042"
+  },
+  {
+    "name": "Sagar Patel",
+    "aliases": ["Sagar Bhai"],
+    "username": "sagar_p",
+    "phone": null,
+    "dob": "1988-06-25",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChhupaTrade", "RaatMarket"],
+    "locationHistory": ["Ahmedabad", "Surat"],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Bhai, koi f-1-r-3 cheez hai kya? (Terms: [f-1-r-3, cheez], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: 💰 taiyar, raat ko d-r-0-p kar 🦚 (Terms: [d-r-0-p, 🦚], Intent: Coordinating deal in Hinglish)"
+    ],
+    "request_id": "req043"
+  },
+  {
+    "name": "Aishwarya Kadam",
+    "aliases": ["Aish Tai"],
+    "username": "aish_k",
+    "phone": "9871234568",
+    "dob": "1993-04-30",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NakaBazaar", "RaatAdda"],
+    "locationHistory": ["Mumbai", "Kolhapur"],
+    "riskScore": 83,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi l-3-@-f saman ahe ka? (Terms: [l-3-@-f, saman], Intent: Requesting drugs in Marathi-English)",
+      "Suspicious message: Drop sathi 🌉 thik aahe (Terms: [🌉, drop], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req044"
+  },
+  {
+    "name": "Manjunath Shetty",
+    "aliases": ["Manju Anna"],
+    "username": "manju_s",
+    "phone": null,
+    "dob": "1990-08-14",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkHalli", "NightSampige"],
+    "locationHistory": ["Bengaluru", "Belgaum"],
+    "riskScore": 86,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Yenu ch-0-c-0 stuff ideya rave ge? (Terms: [ch-0-c-0, stuff], Intent: Seeking drugs in Kannada-English)",
+      "Suspicious message: Cash ready, d-r-0-p madu at 🌃 (Terms: [d-r-0-p, 🌃], Intent: Coordinating delivery in Kannada-English)"
+    ],
+    "request_id": "req045"
+  },
+  {
+    "name": "Harika Goud",
+    "aliases": ["Harika", "HG"],
+    "username": "harika_g",
+    "phone": "9761234568",
+    "dob": "1994-12-09",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ChayaBazaar", "NightRangu"],
+    "locationHistory": ["Hyderabad", "Karimnagar"],
+    "riskScore": 81,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina d-u-5-t unda night ki? (Terms: [d-u-5-t], Intent: Asking for drugs in Telugu)",
+      "Suspicious message: 💸 ready, usual 🌴 lo d-r-0-p chey (Terms: [d-r-0-p, 🌴], Intent: Arranging deal in Telugu-English)"
+    ],
+    "request_id": "req046"
+  },
+  {
+    "name": "Sanjay Verma",
+    "aliases": ["Sanjay Bhai"],
+    "username": "sanjay_v",
+    "phone": null,
+    "dob": "1987-10-20",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowMandi", "DarkGali"],
+    "locationHistory": ["Delhi", "Faridabad"],
+    "riskScore": 87,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi p-0-w-d-3-r maal milega kya? (Terms: [p-0-w-d-3-r, maal], Intent: Requesting drugs in Hinglish)",
+      "Suspicious message: Raat ko s-p-0-t pe d-r-0-p kar 🌙 (Terms: [s-p-0-t, d-r-0-p, 🌙], Intent: Setting up drop in Hinglish)"
+    ],
+    "request_id": "req047"
+  },
+  {
+    "name": "Shruti Sawant",
+    "aliases": ["Shruti Tai"],
+    "username": "shruti_s",
+    "phone": "9891234568",
+    "dob": "1992-01-27",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["NakaTrade", "RaatAdda"],
+    "locationHistory": ["Pune", "Satara"],
+    "riskScore": 84,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Kahi 5-p-1-c-3 cheez ahe ka? (Terms: [5-p-1-c-3, cheez], Intent: Seeking drugs in Marathi-English)",
+      "Suspicious message: Drop karayla 🦚 jagah thik aahe (Terms: [🦚, drop], Intent: Arranging drop in Marathi-English)"
+    ],
+    "request_id": "req048"
+  },
+  {
+    "name": "Venkat Rao",
+    "aliases": ["Venkat", "VR"],
+    "username": "venkat_r",
+    "phone": null,
+    "dob": "1991-07-15",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["DarkRangu", "NightSailu"],
+    "locationHistory": ["Hyderabad", "Nalgonda"],
+    "riskScore": 82,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Emaina k-u-5-h stuff unda party ki? (Terms: [k-u-5-h, stuff], Intent: Requesting drugs in Telugu)",
+      "Suspicious message: Cash ready, 🌃 lo d-r-0-p chey (Terms: [d-r-0-p, 🌃], Intent: Coordinating deal in Telugu-English)"
+    ],
+    "request_id": "req049"
+  },
+  {
+    "name": "Tara Chauhan",
+    "aliases": ["Tara", "TC"],
+    "username": "tara_c",
+    "phone": "9876541231",
+    "dob": "1995-03-22",
+    "platforms": ["Telegram"],
+    "groupMemberships": ["ShadowTrade", "DarkHub"],
+    "locationHistory": ["Jaipur", "Ajmer"],
+    "riskScore": 85,
+    "status": "active",
+    "proof": [
+      "Suspicious message: Koi h-3-r-b maal hai kya chill ke liye? (Terms: [h-3-r-b, maal], Intent: Seeking drugs in Hinglish)",
+      "Suspicious message: 💰 taiyar, usual 🌉 pe d-r-0-p kar (Terms: [d-r-0-p, 🌉], Intent: Arranging delivery in Hinglish)"
+    ],
+    "request_id": "req050"
+  }
+]

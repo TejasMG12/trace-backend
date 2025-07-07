@@ -6,6 +6,6 @@ const role = require('../middleware/role');
 const auth = require('../middleware/auth');
 
 router.post('/login', validate.login, authController.login);
-router.post('/register', auth, role(['admin']), validate.register, authController.register);
+router.post('/register', role(['admin']), validate.register, authController.register);
 
 module.exports = router;
